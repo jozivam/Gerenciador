@@ -1,0 +1,147 @@
+.modal-overlay {
+    
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	position:fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    z-index: 1000;
+}
+
+.modal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 300px;
+	height: 500px;
+	background: ghostwhite;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.modal-wrapper form {
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.modal-wrapper h2{
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.modal-wrapper form .inputBox{
+    position:relative;
+    margin-top: 35px;
+}
+.modal-wrapper form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.5em;
+    transition: 0.5s;
+    z-index: 10;
+}
+.modal-wrapper form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.5em;
+    transition: 0.5s;
+}
+.modal-wrapper form .inputBox input:valid ~ span,
+.modal-wrapper form .inputBox input:focus ~ span{
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+.modal-wrapper form .inputBox i{
+    position: absolute;
+    left: 0 ;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.modal-wrapper form .inputBox input:valid ~ i,
+.modal-wrapper form .inputBox input:focus ~ i{
+    height: 44px;
+}
+.modal-wrapper form .links{
+    display: flex;
+    justify-content: space-between;
+}
+.modal-wrapper form .links a{ 
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+.modal-wrapper form .links a:hover,
+.modal-wrapper form .links a:nth-child(2){
+    color: #fff;
+}
+.modal-wrapper form input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+}
+.modal-wrapper form input[type="submit"]:active{
+    opacity: 0.8;
+}
+
+.open-modal-btn-wrapper {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.close-modal-btn,
+
+
+.close-btn-wrapper {
+	display: flex;
+}
+
+.modal-content {
+	margin: 20px auto;
+	max-width: 210px;
+	width: 100%;
+}
+
+.hide {
+	display: none;
+}
+
+h1 {
+	text-align: center;
+}

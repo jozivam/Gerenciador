@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/start.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <div class="box">
+        <form action="#">
+            <h2>Login</h2>
+            <div class="inputBox">
+                <input type="text" required="required">
+                <span>Nome</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required">
+                <span>Senha</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="index.html">Esquecia a Senha?</a>
+                <a href="#" class="open-modal-btn">Resgistrar</a>
+            </div>
+            <input type="submit" value="Entrar">
+            
+        </form>   
+    </div>
+
+    <div class="modal-overlay hide">
+        <div class="modal-wrapper">
+            <div class="close-btn-wrapper">
+                <button class="close-modal-btn">
+                    Close
+                </button>
+            </div>
+
+            <form action="#">
+                <h2>Cadastrar</h2>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Nome</span>
+                    <i></i>
+                </div>
+                <div class="inputBox">
+                    <input type="password" required="required">
+                    <span>Senha</span>
+                    <i></i>
+                </div>
+                
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </div>
+    <script src="js/start.js"></script>   
+    
+</html>
